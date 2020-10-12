@@ -22,5 +22,7 @@ public class CD extends Item {
 	}
 	
 	
-	
+	public void accept(ItemVisitor v) {
+		v.visit(this);
+	}
 }

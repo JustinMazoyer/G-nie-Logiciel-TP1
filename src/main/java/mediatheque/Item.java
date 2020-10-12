@@ -7,6 +7,8 @@ public abstract class Item {
 		this.title = title;
 	}
 
+        public abstract void accept(ItemVisitor v);
+        
 	public String getTitle() {
 		return title;
 	}
